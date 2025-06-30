@@ -1,0 +1,6 @@
+SET NOCOUNT ON;
+EXEC sys.sp_addextendedproperty 
+    @name = N'Description', 
+    @value = N'Main campus database';
+
+SET NOCOUNT OFF;

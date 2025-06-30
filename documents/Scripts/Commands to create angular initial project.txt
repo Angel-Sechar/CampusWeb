@@ -1,0 +1,27 @@
+#npm version
+#10.8.2
+
+# Node.js version
+#20.19.2
+
+#Angular CLI version
+#18.0.5
+
+#OS WINDOWS 11 WIN32 X64
+
+#Install Angular CLI version 18 globally
+npm install -g @angular/cli@18
+
+# Create Angular 18 project
+ng new campus-frontend --routing --style=scss --package-manager=npm --standalone=true
+
+cd campus-frontend
+
+# Add Angular Material
+ng add @angular/material
+
+# Add PWA support
+ng add @angular/pwa
+
+# Add Angular CDK for advanced features
+ng add @angular/cdk
