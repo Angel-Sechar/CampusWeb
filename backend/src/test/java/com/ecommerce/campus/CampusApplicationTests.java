@@ -1,4 +1,4 @@
-package com.ajsv.campus;
+package com.ecommerce.campus;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

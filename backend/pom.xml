@@ -8,11 +8,11 @@
 		<version>3.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ajsv</groupId>
+	<groupId>com.ecommerce</groupId>
 	<artifactId>campus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>campus</name>
-	<description>Demo campus project for Spring Boot</description>
+	<description>Starter campus e-commerce application</description>
 	<url/>
 	<licenses>
 		<license/>

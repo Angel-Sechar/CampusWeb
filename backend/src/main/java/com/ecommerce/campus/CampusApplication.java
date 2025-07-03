@@ -1,4 +1,4 @@
-package com.ajsv.campus;
+package com.ecommerce.campus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

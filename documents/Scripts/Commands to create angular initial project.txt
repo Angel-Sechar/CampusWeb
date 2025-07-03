@@ -7,6 +7,12 @@
 #Angular CLI version
 #18.0.5
 
+#Maven version
+Apache Maven 3.9.18 5f519b97e944483d878815739f519b2eadeea91d
+
+#Java version
+java version "21.0.5" 2024-18-15 LTS
+
 #OS WINDOWS 11 WIN32 X64
 
 #Install Angular CLI version 18 globally

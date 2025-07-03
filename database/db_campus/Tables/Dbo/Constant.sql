@@ -6,7 +6,7 @@ Description: This script creates the Constant table in the database.
 The table includes columns for constant ID, value, description, related information, and status.
 ---------------------------------------------------------------------------------------------------
 */
-CREATE TABLE DBO.Constant
+CREATE TABLE dbo.Constant
 (
 	nConstantId INT,
 	nConstantValue INT,
