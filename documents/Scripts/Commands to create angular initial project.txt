@@ -15,6 +15,9 @@ java version "21.0.5" 2024-18-15 LTS
 
 #OS WINDOWS 11 WIN32 X64
 
+#Spring boot
+3.4.7
+
 #Install Angular CLI version 18 globally
 npm install -g @angular/cli@18
 
