@@ -17,14 +17,16 @@ java version "21.0.5" 2024-18-15 LTS
 
 #Spring boot
 3.4.7
+###Dependencies
+
+#Database in Docker
+docker run -d --name sqlserver-dev -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=*******" -p 1433:1433 mcr.microsoft.com/mssql/server:2022-latest
 
 #Install Angular CLI version 18 globally
 npm install -g @angular/cli@18
 
 # Create Angular 18 project
 ng new campus-frontend --routing --style=scss --package-manager=npm --standalone=true
-
-cd campus-frontend
 
 # Add Angular Material
 ng add @angular/material
