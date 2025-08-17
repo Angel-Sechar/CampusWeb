@@ -45,24 +45,31 @@ bun add -d @biomejs/biome
 bunx @biomejs/biome init
 
 # 3. Install ESLint for Angular-specific rules only
-bun add -d \
-  eslint \
-  @angular-eslint/builder \
-  @angular-eslint/eslint-plugin \
-  @angular-eslint/eslint-plugin-template \
-  @angular-eslint/schematics \
-  @angular-eslint/template-parser \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser
+# Install ESLint 8 specifically
+bun add -d eslint@^8.57.0
+
+
+bun add -d @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/schematics @angular-eslint/template-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
 
 # 4. Install architecture enforcement plugins
-bun add -d \
-  eslint-plugin-import \
-  eslint-import-resolver-typescript \
+bun add -d
+  eslint-plugin-import
+  eslint-import-resolver-typescript
   eslint-plugin-boundaries
 
 # 5. Add Angular ESLint schematics
 bunx ng add @angular-eslint/schematics
 
-# 6. (Optional) If you have a prettier config, migrate it
-bunx @biomejs/biome migrate prettier --write
+# 6.  If you have a prettier config, migrate it
+bunx @biomejs/biome migrate prettier --Write
+
+#VITEST
+# Core Vitest packages for Angular
+bun add -d vitest @vitest/ui @analogjs/vite-plugin-angular happy-dom
+
+# Testing utilities
+bun add -d @testing-library/angular @testing-library/jest-dom
+
+#Husky
+bunx husky init
