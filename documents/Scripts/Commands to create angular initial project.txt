@@ -73,3 +73,29 @@ bun add -d @testing-library/angular @testing-library/jest-dom
 
 #Husky
 bunx husky init
+
+# Git endlines to be compatible with biome
+#  fully disable CRLF conversion
+git config --global core.autocrlf false
+
+# normalize line endings to LF when committing
+git config --global core.eol lf
+
+# Tailwind install dependencies
+bun add -d tailwindcss postcss autoprefixer
+
+# Initialize
+bun add -d tailwindcss @tailwindcss/postcss
+
+# SSL
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crf
+
+# to run nginx container
+docker build -t nginx ./nginx
+docker run -d -p 80:80 -p 443:443 -v "$(pwd)/dist/campus-frontend/browser:/usr/share/nginx/html:ro" --name nginx-test nginx
+
+#let's encypt ssl
+docker-compose run --rm certbot certonly --webroot -w /var/www/certbot -d campusproject08.com -d www.campusproject08.com --email asv_18_1999@hotmail.com --agree-tos --no-eff-email
+
+#To migrate from constructor injection to the modern inject method
+ ng generate @angular/core:inject --path src/app/features/auth/infrastructure
