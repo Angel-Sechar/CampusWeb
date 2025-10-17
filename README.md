@@ -83,5 +83,3 @@ It leverages **Spring Boot**, **Spring Cloud**, **Consul**, **Liquibase**, **Red
 
 ---
 
-## 📦 Project Structure
-
