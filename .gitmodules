@@ -1,3 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:Angel-Sechar/Frontend.git
+[submodule "microservices-springboot"]
+	path = microservices-springboot
+	url = git@github.com:Angel-Sechar/microservices-springboot.git
