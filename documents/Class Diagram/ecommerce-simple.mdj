@@ -1,0 +1,28 @@
+@startuml
+title Simple E-Commerce Model
+
+class User {
+  +id: int
+  +name: string
+  +email: string
+  +password: string
+}
+
+class Product {
+  +id: int
+  +name: string
+  +price: decimal
+  +stock: int
+}
+
+class Order {
+  +id: int
+  +orderDate: Date
+  +totalAmount: decimal
+}
+
+' Relationships
+User "1" --> "many" Order : places >
+Order "1" --> "many" Product : contains >
+
+@enduml
